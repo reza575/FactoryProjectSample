@@ -23,7 +23,7 @@
        android:layout_width="match_parent"
        android:layout_height="0dp">
 
-       <androidx.core.widget.NestedScrollView
+       <ScrollView
            app:layout_constraintTop_toBottomOf="@id/ll_main_country"
            app:layout_constraintBottom_toTopOf="@id/ll_main_country2"
            app:layout_constraintStart_toStartOf="parent"
@@ -37,11 +37,11 @@
         android:layout_alignParentLeft="true"
         android:layout_margin="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
     </LinearLayout>
 
 
-       </androidx.core.widget.NestedScrollView>
+       </ScrollView>
 
        <LinearLayout
            android:orientation="vertical"

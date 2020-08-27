@@ -5,6 +5,6 @@ import retrofit2.Call
 import retrofit2.http.*
 
 interface ApiService {
-    @GET("reza.json")
+    @GET("reza2.json")
     fun getDecisonsInfo():Call<List<Decision>>
 }
