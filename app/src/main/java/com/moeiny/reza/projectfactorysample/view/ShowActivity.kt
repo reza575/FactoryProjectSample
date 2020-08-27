@@ -44,6 +44,7 @@ class ShowActivity : AppCompatActivity() {
             var idx = rand.nextInt(items.size)
             var element = Random_element(this)
             element.txtTitle2.text = items[idx].decision_title
+
             var param = LinearLayout.LayoutParams(
                 LinearLayout.LayoutParams.MATCH_PARENT,
                 LinearLayout.LayoutParams.WRAP_CONTENT
@@ -56,10 +57,10 @@ class ShowActivity : AppCompatActivity() {
                     continue;
                 var element = Selected_element(this, i, items.size)
                 element.txtTitle.text = items[i].decision_title
-                var param = LinearLayout.LayoutParams(
-                    LinearLayout.LayoutParams.MATCH_PARENT,
-                    LinearLayout.LayoutParams.WRAP_CONTENT
-                )
+
+                var param = LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,
+                    LinearLayout.LayoutParams.WRAP_CONTENT)
+
                 param.setMargins(15, 15, 15, 15)
                 linear_vertical_left.addView(element, param)
                 var a: Animation = TranslateAnimation(-1000f, 0f, 0f, 0f)
