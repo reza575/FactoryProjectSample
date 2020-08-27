@@ -30,7 +30,6 @@ It just needs to import to Android Studio 3(Gradle 4) as a kotlin project
 * [MVVM Design](https://www.journaldev.com/20292/android-mvvm-design-pattern) -Using MVVM Patternwith viewModel,lifecycle,DataBinding
 * [MVVM Implementation](https://codingwithmitch.com/blog/getting-started-with-mvvm-android) -implementing MVVM Pattern 
 * [Material Design](https://developer.android.com/guide/topics/ui/look-and-feel) -Using of material design
-* [Unit Test(Mokito Test)](https://www.vogella.com/tutorials/Mockito/article.html) -Using of Mokito Test
 * [version gradle]
 
 
