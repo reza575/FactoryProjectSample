@@ -24,6 +24,7 @@
        android:layout_height="0dp">
 
        <ScrollView
+           android:scrollbars="none"
            app:layout_constraintTop_toBottomOf="@id/ll_main_country"
            app:layout_constraintBottom_toTopOf="@id/ll_main_country2"
            app:layout_constraintStart_toStartOf="parent"
