@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.moeiny.reza.projectfactorysample.view.customview.HeaderLayout
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/ll_main_country"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+
+    </com.moeiny.reza.projectfactorysample.view.customview.HeaderLayout>
+
+   <LinearLayout
+       android:orientation="horizontal"
+       app:layout_constraintTop_toBottomOf="@id/ll_main_country"
+       app:layout_constraintBottom_toTopOf="@id/ll_main_country2"
+       android:layout_width="match_parent"
+       android:layout_height="0dp">
+
+       <androidx.core.widget.NestedScrollView
+           app:layout_constraintTop_toBottomOf="@id/ll_main_country"
+           app:layout_constraintBottom_toTopOf="@id/ll_main_country2"
+           app:layout_constraintStart_toStartOf="parent"
+           android:layout_width="0dp"
+           android:layout_weight=".5"
+           android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/ll_vertical_left"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </LinearLayout>
+
+
+       </androidx.core.widget.NestedScrollView>
+
+
+
+
+       <LinearLayout
+           android:orientation="vertical"
+           android:id="@+id/ll_vertical_right"
+           android:layout_alignParentRight="true"
+           android:layout_margin="10dp"
+           android:layout_width="0dp"
+           android:layout_weight=".5"
+           android:layout_height="match_parent">
+
+
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <com.moeiny.reza.projectfactorysample.view.customview.FotterLayout2
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:id="@+id/ll_main_country2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <TextView
+            android:id="@+id/txt_back"
+            android:background="@drawable/shapebottonback"
+            android:text="Back"
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="70dp"
+            android:textSize="30dp"
+            android:textAlignment="center"
+            android:padding="5dp"
+            android:textColor="@color/white"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"/>
+
+    </com.moeiny.reza.projectfactorysample.view.customview.FotterLayout2>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
