@@ -43,13 +43,9 @@ dependencies {
     implementation deps.support.appcompat
     implementation deps.support.annotatoin
     implementation deps.support.design
-    implementation deps.support.cardview
     implementation deps.support.constraintlayout
     implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.3'
 
-    // Rxjava
-    implementation deps.rxjava.rxjava
-    implementation deps.rxjava.rxandroid
 
     // Retrofit
     implementation deps.retrofit.retrofit
@@ -58,13 +54,9 @@ dependencies {
     implementation deps.retrofit.interceptor
     implementation deps.retrofit.adapterrxjava2
 
-    // Gson
-    implementation deps.google.gson
-
     // Lifecycle
     kapt deps.lifecycle.compiler
     implementation deps.lifecycle.extensions
-    implementation deps.lifecycle.livedata
     implementation deps.lifecycle.rx
 
     // Room
@@ -75,14 +67,4 @@ dependencies {
     // Test
     testImplementation deps.test.junit
     androidTestImplementation deps.test.runner
-    androidTestImplementation deps.test.rules
-    androidTestImplementation deps.test.espressocore
-    androidTestImplementation deps.test.roomtesting
-    testImplementation deps.test.mockito
-    testImplementation deps.test.mockitokotlin
-    testImplementation deps.test.mockitoinline
-
-    //glide
-    implementation deps.github.glide
-    annotationProcessor deps.github.glidecompailer
 }

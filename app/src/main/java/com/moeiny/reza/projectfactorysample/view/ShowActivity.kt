@@ -39,7 +39,7 @@ class ShowActivity : AppCompatActivity() {
         super.onResume()
         var items=viewModel.getSelected()
 
-        if(items.size!=null) {
+        if(items.size!=0) {
             var rand = java.util.Random();
             var idx = rand.nextInt(items.size)
             var element = Random_element(this)

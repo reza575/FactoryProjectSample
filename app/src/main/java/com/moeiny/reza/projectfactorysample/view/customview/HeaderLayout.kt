@@ -32,15 +32,7 @@ class HeaderLayout (context: Context?, attrs: AttributeSet?, defStyleAttr: Int, 
         rect1 = RectF(0f, 0f, w.toFloat(), h.toFloat())
         pArc = object : Paint() {
             init {
-                val l = LinearGradient(
-                    0f,
-                    0f,
-                    w.toFloat(),
-                    h.toFloat(),
-                    Color.BLUE,
-                    Color.RED,
-                    Shader.TileMode.MIRROR
-                )
+                val l = LinearGradient(0f,0f,w.toFloat(),h.toFloat(),Color.BLUE,Color.RED,Shader.TileMode.MIRROR)
                 shader = l
             }
         }
@@ -61,7 +53,6 @@ class HeaderLayout (context: Context?, attrs: AttributeSet?, defStyleAttr: Int, 
     }
 
     protected override fun dispatchDraw(canvas: Canvas) {
-        //        super.dispatchDraw(canvas);
         val w = getWidth()
         val h = getHeight()
 
